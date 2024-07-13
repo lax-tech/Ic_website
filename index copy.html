@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingenious City</title>
+
+    
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./logo.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./logo.png"
+    />
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+
+    <style>
+        *{
+            margin: 0;
+            font-family: "Plus Jakarta Sans", sans-serif;
+            color: #333;
+        }
+        h1, a{
+            color: #9553a0;
+        }
+        body{
+            min-height: 100%;
+            background: linear-gradient(43deg, rgba(229,205,242,1) 0%, rgba(249,249,239,1) 57%, rgba(255,232,232,1) 100%);
+        }
+        main{
+            text-align: center;
+            margin: 30px;
+        }
+        p{
+            font-size: 14px;
+        }
+
+        .anime{
+            animation: move 2s ease-in 0s infinite alternate;
+        }
+
+        @keyframes move {
+            0%{
+                transform: translateY(-10px);
+            }
+            100%{
+                transform: translateY(10px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        
+
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; width: 100%;">
+            <div style="text-align: left; flex: 1; max-width: 500px; width: 100%;">
+                <img width="80" src="./logo.png" alt="Logo IC">
+                <br><br>
+                <h1>Maintenance en Cours ...</h1>
+                <br>
+                <p>Nous effectuons actuellement des mises à jour pour améliorer votre expérience sur le site de Ingenious City. Nous serons de retour sous peu avec de nouvelles fonctionnalités et informations. Revenez bientôt pour découvrir nos améliorations !</p>
+            
+                <br><br>
+            </div>
+            <div style="flex: 1; max-width: 500px; width: 100%; min-width: 300px;">
+                <img class="anime" style="width: 100%;" src="./10805860_4532315.svg" alt="">
+            </div>
+        </div>
+
+        <div class="grey darken-4" style="padding: 20px;">
+            <div>
+                <style>
+                    .lax-logo {
+                        margin-right: 10px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        padding: 2px;
+                    }
+                    
+                    .lax-logo span {
+                        display: inline-block;
+                        width: 50px;
+                        background-color: #00000030;
+                        border-radius: 50%;
+                        height: 20px;
+                    }
+                    
+                    .lax-logo img {
+                        display: inline-block;
+                        margin-bottom: -15px;
+                        animation: rotate 10s infinite 0s linear;
+                    }
+                    
+                    .lax-logo:hover img {
+                        animation: none;
+                        transform: scale(1.2);
+                        filter: contrast(200%);
+                    }
+                    
+                    @keyframes rotate {
+                        from {
+                            transform: rotateZ(0deg);
+                        }
+                        to {
+                            transform: rotateZ(360deg);
+                        }
+                    }
+                </style>
+                <div class="div" style=" display: flex; justify-content: center; width: 100%;">
+                    <div style="padding: 0px 0; display: flex; align-items: center;">
+                        <div>
+                            <a class="lax-logo" href="https://laxtech.pro">
+                                <img src="https://www.mohindoimage.store/static/images/icone 1L.png" width="50" alt="Lax Technologies logo">
+                                <span></span>
+                            </a>
+                        </div>
+                        <div style="font-size: 12px; text-align: left;">
+                            <h2 style="font-size: 12px; line-height: 100%; margin: 0;">Developed by <a class="blue-text" href="https://laxtech.pro">Lax technologies S.A.S</a></h2>
+                            <sub>Innovate, Develop, Transform.</sub>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
