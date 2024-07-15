@@ -1,6 +1,6 @@
 #myVideo {
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     object-fit: cover;
   }
 
@@ -16,12 +16,13 @@ position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #140614ab;
+    background: #130913b7;
     color: #f1f1f1;
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     padding: 20px;
     text-align: center;
+    overflow: hidden;
 }
 
 .video-section-content::after {
@@ -34,6 +35,7 @@ position: relative;
     height: 100px;
     background: #ffffff;
     border-radius: 16px 0 0 0;
+    animation: balance 2s ease-in-out .6s infinite alternate;
 }
 .video-section-content::before {
     content: "";
@@ -45,6 +47,7 @@ position: relative;
     height: 60px;
     background: #dfbae6;
     border-radius: 12px;
+    animation: balance 1.8s ease-out 0s infinite alternate;
 }
 
 .video-section-content div{
@@ -56,22 +59,188 @@ position: relative;
     font-size: 66px;
 }
 
-/* Style the button used to pause/play the video */
-#myBtn {
-width: 200px;
-font-size: 18px;
-padding: 10px;
-border: none;
-background: #000;
-color: #fff;
-cursor: pointer;
+
+/* Mission Section */
+.mission-section{/* 
+    background: linear-gradient(135deg, #ffffff 0%, rgba(249,249,239,1) 57%, #ffe8e8 100%); */
+
 }
 
-#myBtn:hover {
-background: #ddd;
-color: black;
+.mission-card{
+    background-color: #f8def8;
+    border-radius: 12px;
+    padding: 30px;
+    margin: 10px;
+    text-align: center;
+    transition: .6s ease-in;
 }
 
+
+.mission-card:hover{
+    background-color: white !important;
+}
+
+.mission-card:hover img{
+    transition: .4s ease-out;
+    transform: scale(1.1);
+}
+
+
+.mission-card h3{
+    margin-top: 10px;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.mission-card.first{
+    background-color: #fcedfc;
+}
+
+.mission-card.second{
+    background-color: #ffece7;
+}
+
+.mission-card.third{
+    background-color: #fffed8;
+}
+
+.mission-card img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+
+/* About Section */
+.about-section{
+    padding-left: 20px;
+    padding-right: 20px;
+    background: linear-gradient(45deg, rgba(229,205,242,1) 0%, rgba(249,249,239,1) 57%, #ffe8e8 100%);
+}
+
+.about-section img{
+    border-radius: 12px;
+    width: 100%;
+}
+
+
+/* Service Section */
+.service-section{
+
+}
+
+.service-section img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.service-card{
+    margin: 20px 10px;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 0 20px 1px #eae4eb;
+    transition: .4s ease-out;
+}
+
+.service-card h3{
+    font-size: 24px;
+    font-weight: 800;
+}
+
+
+.service-card .content{
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.service-card .content .text-content{
+    position: absolute;
+    background: linear-gradient(to top, #130913b7 0%, #ffffff00 100%);
+    top: 10%;
+    left: 0;
+    color: white;
+    padding: 12px;
+    padding-bottom: 0;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    transition: .4s ease-out;
+    opacity: 0;
+}
+
+.service-card .content:hover .text-content{
+    top: 0;
+    opacity: 1;
+}
+
+
+.service-card:hover{
+    margin-top: -5px;
+    box-shadow: none;
+}
+
+/* 4ba Section */
+.the4ba-section{
+    /*  */
+}
+
+.the4ba-section .text-content{
+    position: relative;
+    height: 100%;
+    padding: 20px;
+}
+
+.the4ba-section *{
+    position: relative;
+    z-index: 1;
+
+}
+
+.the4ba-section  .background{
+    position: absolute;
+    top: 0;
+    left: -20px;
+    bottom: 0;
+    right: 35%;
+    background: linear-gradient(45deg, rgba(229,205,242,1) 0%, rgba(249,249,239,1) 57%, #ffe8e8 100%);
+    z-index: 0;
+    border-radius: 18px;
+}
+
+
+.the4ba-section .section-title{
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.the4ba-section .the4ba-card{
+    background-color: white;
+    border-radius: 12px;
+    border: 1px solid #f3f1f1;
+    padding: 20px;
+    margin: 20px;
+
+}
+
+.the4ba-section .the4ba-card img{
+    width: 100px;
+
+}
+
+
+
+
+/* Animations */
+
+@keyframes balance {
+    0%{
+        transform: translateY(0px) translateX(0px);
+    }
+    100%{
+        transform: translateY(15px) translateX(15px);
+    }
+}
 
 
 /* Media queries */
@@ -79,8 +248,22 @@ color: black;
 @media (max-width: 768px) {
 
     .video-section-content h1{
-        font-weight: bold;
-        font-size: 30px;
+        font-weight: 800;
+        font-size: 40px;
+    }
+
+    
+    .the4ba-section .text-content{
+        padding: 40px;
+    }
+
+    
+    .the4ba-section  .background{
+        top: 0;
+        left: 10px;
+        bottom: 0;
+        right: 10px;
+        height: 500px;
     }
 }
 
