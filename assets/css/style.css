@@ -176,7 +176,7 @@ position: relative;
 
 
 .service-card:hover{
-    margin-top: -5px;
+    margin-top: -2px;
     box-shadow: none;
 }
 
@@ -220,16 +220,47 @@ position: relative;
     border: 1px solid #f3f1f1;
     padding: 20px;
     margin: 20px;
+    transition: all .4s ease-out;
+}
+
+.the4ba-section .the4ba-card:hover{
+    box-shadow: 0 0 28px 1px #e5e0e6da;
 
 }
 
 .the4ba-section .the4ba-card img{
-    width: 100px;
+    width: 150px;
+}
 
+.the4ba-section .the4ba-card p{
+    margin-bottom: 0;
 }
 
 
+/* Key Figures Section */
+.metrics-section{
+    background: #5b104b;
+    color: white;
+}
 
+.metrics-section .number{
+    font-size: 80px;
+    font-weight: 800;
+}
+
+.metrics-section .metrics-card {
+}
+
+.metrics-section .metrics-card h3{
+    font-size: 18px;
+}
+
+
+.metrics-section .metrics-card img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
 
 /* Animations */
 

@@ -222,7 +222,7 @@
                             <div class="col-12 col-md-6">
                                 <div class="the4ba-card">
                                     <div>
-                                        <img src="./assets/img/illustrations/formation.svg" alt="">
+                                        <img src="./assets/img/illustrations/tech.svg" alt="">
                                     </div>
                                     <div>
                                         <h3>Bakeli</h3>
@@ -233,7 +233,7 @@
                             <div class="col-12 col-md-6">
                                 <div class="the4ba-card">
                                     <div>
-                                        <img src="./assets/img/illustrations/formation.svg" alt="">
+                                        <img src="./assets/img/illustrations/agro.svg" alt="">
                                     </div>
                                     <div>
                                         <h3>Baloni</h3>
@@ -244,7 +244,7 @@
                             <div class="col-12 col-md-6">
                                 <div class="the4ba-card">
                                     <div>
-                                        <img src="./assets/img/illustrations/formation.svg" alt="">
+                                        <img src="./assets/img/illustrations/work.svg" alt="">
                                     </div>
                                     <div>
                                         <h3>Basali</h3>
@@ -255,13 +255,68 @@
                             <div class="col-12 col-md-6">
                                 <div class="the4ba-card">
                                     <div>
-                                        <img src="./assets/img/illustrations/formation.svg" alt="">
+                                        <img src="./assets/img/illustrations/service.svg" alt="">
                                     </div>
                                     <div>
                                         <h3>Basungi</h3>
                                         <p>Services</p>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section metrics-section">
+            <div class="container">
+                <h2 class="section-title text-center">Notre expérience donnée en chiffres</h2>
+                <p class="text-center">Depuis sa création en 2018, Ingenious City c’est :</p>
+                <br>
+                <br>
+                <div class="row text-center">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="metrics-card">
+                            <div>
+                                <img src="./assets/img/illustrations/partnership.svg" alt="">
+                            </div>
+                            <div>
+                                <h3>Partenaires et sponsors</h3>
+                                <p class="number">+<span class="counter1">600</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="metrics-card">
+                            <div>
+                                <img src="./assets/img/illustrations/office.svg" alt="">
+                            </div>
+                            <div>
+                                <h3>m² d'espace disponible</h3>
+                                <p class="number">+<span class="counter2">1200</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="metrics-card">
+                            <div>
+                                <img src="./assets/img/illustrations/network.svg" alt="">
+                            </div>
+                            <div>
+                                <h3>Personnes dans notre réseau de mentors et experts</h3>
+                                <p class="number">+<span class="counter3">150</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="metrics-card">
+                            <div>
+                                <img src="./assets/img/illustrations/projects.svg" alt="">
+                            </div>
+                            <div>
+                                <h3>Projets incubés</h3>
+                                <p class="number">+<span class="counter4">100</span></p>
                             </div>
                         </div>
                     </div>
@@ -276,6 +331,7 @@
     <script src="./assets/js/vendor/axios.min.js"></script>
     <script src="./assets/js/vendor/modernizr.min.js"></script>
     <script src="./assets/js/vendor/jquery.js"></script>
+    <script src="/path/to/countMe.min.js"></script>
     <script src="./assets/js/vendor/popper.min.js"></script>
     <script src="./assets/js/vendor/bootstrap.min.js"></script>
     <script src="./assets/js/vendor/slick.min.js"></script>
@@ -286,12 +342,20 @@
     <script src="./assets/js/vendor/jquery.magnific-popup.min.js"></script>
     <script src="./assets/js/vendor/imagesloaded.pkgd.min.js"></script>
     <script src="./assets/js/vendor/isotope.pkgd.min.js"></script>
+    <script src="./assets/js/vendor/countMe.min.js"></script>
     <script src="./assets/js/vendor/counterup.js"></script>
     <script src="./assets/js/vendor/waypoints.min.js"></script>
 
 
     <script>
         document.getElementById('myVideo').play();
+        
+        jQuery(document).ready(function($) {
+            $(".counter1").countMe(10,10);
+            $(".counter2").countMe(10,10);
+            $(".counter3").countMe(10,10);
+            $(".counter4").countMe(10,10);
+        });
     </script>
 </body>
 </html>
