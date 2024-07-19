@@ -104,8 +104,8 @@ nav{
 
 
 .section{
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .btn {
@@ -139,8 +139,43 @@ nav{
     font-size: 40px;
     font-weight: 800;
     color: #5b104b;
+    position: relative;
 }
 
+
+.section-title::after{
+    position: absolute;
+    content: '';
+    height: 7px;
+    width: 80px;
+    top: -8px;
+    left: 0;
+    border-radius: 4px;
+    background-color: #c231a052;
+}
+.section-title.text-center::after{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+
+/* Custom swipper js */
+.swiper-button-prev, .swiper-button-next{
+    color: #c231a0bb !important;
+    font-size: 10px;
+}
+.swiper-button-prev{
+    margin-left: -10px;
+}
+.swiper-button-next{
+    margin-right: -10px;
+}
+
+.swiper-pagination{
+    color: #C231A1;
+}
 
 
 /* Media queries */
