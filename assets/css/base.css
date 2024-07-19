@@ -97,6 +97,10 @@ nav{
     border-bottom: 1px solid rgba(255, 255, 255, 0.637);
 }
 
+main{
+    overflow: hidden;
+}
+
 
 .nav-link{
     color: white;
