@@ -166,7 +166,25 @@ a{
     transform: translateX(-50%);
 }
 
+.bg-gradient{
+    background: linear-gradient(45deg, rgba(229,205,242,1) 0%, rgba(249,249,239,1) 57%, #ffe8e8 100%) !important;
+}
 
+.btn-to-top{
+    padding: 10px;
+    height: 45px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 1000;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 0 0 20px 1px #1e1c1f57;
+}
 
 
 /* Custom swipper js */
