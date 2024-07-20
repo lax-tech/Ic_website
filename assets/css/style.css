@@ -639,6 +639,10 @@ footer{
     color: white;
 }
 
+footer .row{
+    padding: 0 20px;
+}
+
 footer h3{
     font-size: 21px;
     font-weight: 800;
