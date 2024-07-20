@@ -51,7 +51,7 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img height="60" src="./assets/img/logo-white.png" alt="Logo Ingenious City">
+                    <img height="60" src="./assets/img/logo_IC_white.png" alt="Logo Ingenious City">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="text-white fa fa-bars"></i>
@@ -104,17 +104,17 @@
                           <div class="swiper-slide"> 
                             <br><br>
                             <h1 data-swiper-parallax="100">The place to be !</h1>
-                            <p data-swiper-parallax="-1000">Ingenious City est un centre clé où les acteurs de changement en RDC peuvent se connecter et construire ensemble des solutions d'impact. </p>
+                            <p data-swiper-parallax="-700">Ingenious City est un centre clé où les acteurs de changement en RDC peuvent se connecter et construire ensemble des solutions d'impact. </p>
                             <a class="btn btn-primary">En savoir plus</a>
                           </div>
                           <div class="swiper-slide">
                             <h1 data-swiper-parallax="100">Apprendre, Réseauter, Démarrer.</h1>
-                            <p data-swiper-parallax="-1000">Si vous voulez avoir un impact sur la vie des gens en RDC, nous pouvons collaborer. </p>
+                            <p data-swiper-parallax="-700">Si vous voulez avoir un impact sur la vie des gens en RDC, nous pouvons collaborer. </p>
                             <a class="btn btn-primary">En savoir plus</a>
                           </div>
                           <div class="swiper-slide">
                             <h1>L’impact que vous voulez créer en RDC commence ici!</h1>
-                            <p data-swiper-parallax="-2000">Développez votre projet entrepreneurial et vos solutions innovantes, Intégrez un réseau d’acteurs du changement en RDC dans un espace dédié, Ingenious City.</p>
+                            <p data-swiper-parallax="-1000">Développez votre projet entrepreneurial et vos solutions innovantes, Intégrez un réseau d’acteurs du changement en RDC dans un espace dédié, Ingenious City.</p>
                             <a class="btn btn-primary">En savoir plus</a>
                           </div>
                         </div>
@@ -179,17 +179,17 @@
         <section class="section about-section">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-12 col-lg-6" data-aos="zoom-out-right" data-aos-duration="2000">
+                    <div class="col-12 col-lg-6" data-aos="zoom-out" data-aos-duration="1200">
                         <img src="./assets/img/img1.jpeg" alt="">
                     </div>
                     <div class="col-12 col-lg-6">
                         <br><br>
                         <h2 class="text-bold section-title" data-aos="fade-left" data-aos-duration="700">Incubateur et Accélérateur</h2>
                         <br>
-                        <p data-aos="fade-left" data-aos-delay="200" data-aos-duration="700">Ingenious City accompagne les entreprises naissantes et projets prometteurs en leur offrant le cadre et les conditions professionnelles nécessaires à leur exécution et à leur fonctionnement.</p>
-                        <p data-aos="fade-left" data-aos-delay="400" data-aos-duration="700">Nous participons à l’émergence de jeunes entreprises en leur facilitant l’accès au mentorat et en les connectant à un réseau d’investisseurs jusqu’à leur implantation sur le marché et à leur autonomie.</p>
+                        <p data-aos="fade-left" data-aos-delay="100" data-aos-duration="700">Ingenious City accompagne les entreprises naissantes et projets prometteurs en leur offrant le cadre et les conditions professionnelles nécessaires à leur exécution et à leur fonctionnement.</p>
+                        <p data-aos="fade-left" data-aos-delay="200" data-aos-duration="700">Nous participons à l’émergence de jeunes entreprises en leur facilitant l’accès au mentorat et en les connectant à un réseau d’investisseurs jusqu’à leur implantation sur le marché et à leur autonomie.</p>
 
-                        <a data-aos="fade-left" data-aos-delay="600" data-aos-duration="700" class="btn btn-primary" data-aos="fade-up" data-aos-duration="700">En savoir plus</a>
+                        <a data-aos="fade-left" data-aos-delay="300" data-aos-duration="700" class="btn btn-primary" data-aos="fade-up" data-aos-duration="700">En savoir plus</a>
                     </div>
                 </div>
             </div>
@@ -368,13 +368,14 @@
                 <div>
                     <form action="">
                         <div>
-                            <input type="text">
-                            <input type="text">
+                            <input type="text" placeholder="Nom">
+                            <input type="text" placeholder="E-mail">
                         </div>
                         <br>
                         <button class="btn btn-primary">S'abonner</button>
                     </form>
                 </div>
+                <br>
             </div>
         </section>
 
@@ -547,10 +548,37 @@
         AOS.init();
         
         jQuery(document).ready(function($) {
-            $(".counter1").countMe(10,10);
-            $(".counter2").countMe(10,10);
-            $(".counter3").countMe(10,10);
-            $(".counter4").countMe(10,10);
+
+            $(window).scroll(function() {
+                if ($(window).scrollTop() + $(window).height() > $('.counter1').offset().top) {
+                    if(!$('.counter1').hasClass('counted')){
+                        $(".counter1").countMe(10,10);
+                        $('.counter1').addClass('counted') 
+                    }
+                    $('.counter1').addClass('counted') 
+                }
+                if ($(window).scrollTop() + $(window).height() > $('.counter2').offset().top) {
+                    if(!$('.counter2').hasClass('counted')){
+                        $(".counter2").countMe(10,10);
+                        $('.counter2').addClass('counted') 
+                    }
+                    $('.counter2').addClass('counted') 
+                }
+                if ($(window).scrollTop() + $(window).height() > $('.counter3').offset().top) {
+                    if(!$('.counter3').hasClass('counted')){
+                        $(".counter3").countMe(10,10);
+                        $('.counter3').addClass('counted') 
+                    }
+                    $('.counter3').addClass('counted') 
+                }
+                if ($(window).scrollTop() + $(window).height() > $('.counter4').offset().top) {
+                    if(!$('.counter4').hasClass('counted')){
+                        $(".counter4").countMe(10,10);
+                        $('.counter4').addClass('counted') 
+                    }
+                    $('.counter4').addClass('counted') 
+                }
+            });
         });
 
         const swiper = new Swiper('.swiper-intro', {
