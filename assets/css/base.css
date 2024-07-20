@@ -94,11 +94,15 @@ header{
 }
 
 nav{
-    border-bottom: 1px solid rgba(255, 255, 255, 0.637);
+    border-bottom: 1px solid #ffffff4d;
 }
 
 main{
     overflow: hidden;
+}
+
+a{
+    color: #C231A1;
 }
 
 
@@ -109,7 +113,7 @@ main{
 
 .section{
     padding-top: 70px;
-    padding-bottom: 80px;
+    padding-bottom: 70px;
 }
 
 .btn {
@@ -155,7 +159,7 @@ main{
     top: -8px;
     left: 0;
     border-radius: 4px;
-    background-color: #c231a052;
+    background-color: #dd64c19c;
 }
 .section-title.text-center::after{
     left: 50%;

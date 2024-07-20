@@ -50,7 +50,7 @@
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="./index.html">
                     <img height="60" src="./assets/img/logo_IC_white.png" alt="Logo Ingenious City">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,14 +60,14 @@
                     <div></div>
                     <ul class="nav text-white navbar-nav navbar-right" style="--bs-scroll-height: 100px;">
                         <li class="nav-item">
-                        <a class="nav-link text-white active" aria-current="page" href="#">Accueil</a>
+                        <a class="nav-link text-white active" aria-current="page" href="./index.html">Accueil</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Ingenious City
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./about.html">A propos de nous</a></li>
+                                <li><a class="dropdown-item" href="#">A propos de nous</a></li>
                                 <li><a class="dropdown-item" href="#">Services</a></li>
                                 <li><a class="dropdown-item" href="#">Blog</a></li>
                                 <li><hr class="dropdown-divider"></li>
@@ -91,41 +91,9 @@
     </header>
 
     <main>
-        <section class="video-section">
-            <video autoplay muted loop id="myVideo">
-                <source src="./assets/img/OfficeBackground.mp4" type="video/mp4">
-            </video>
-            <div class="video-section-content">
-                <div class="container d-flex align-items-center flex-column">
-                    <div class="swiper swiper-intro animate__animated animate__fadeIn"  data-swiper-autoplay="2000">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                          <!-- Slides -->
-                          <div class="swiper-slide"> 
-                            <br><br>
-                            <h1 class="page-title" data-swiper-parallax="100">The place to be !</h1>
-                            <p data-swiper-parallax="-700">Ingenious City est un centre clé où les acteurs de changement en RDC peuvent se connecter et construire ensemble des solutions d'impact. </p>
-                            <a href="./about.html" class="btn btn-primary">En savoir plus</a>
-                          </div>
-                          <div class="swiper-slide">
-                            <h1 data-swiper-parallax="100">Apprendre, Réseauter, Démarrer.</h1>
-                            <p data-swiper-parallax="-700">Si vous voulez avoir un impact sur la vie des gens en RDC, nous pouvons collaborer. </p>
-                            <a href="./about.html" class="btn btn-primary">En savoir plus</a>
-                          </div>
-                          <div class="swiper-slide">
-                            <h1>L’impact que vous voulez créer en RDC commence ici!</h1>
-                            <p data-swiper-parallax="-1000">Développez votre projet entrepreneurial et vos solutions innovantes, Intégrez un réseau d’acteurs du changement en RDC dans un espace dédié, Ingenious City.</p>
-                            <a href="./about.html" class="btn btn-primary">En savoir plus</a>
-                          </div>
-                        </div>
-                        <!-- If we need pagination -->
-                        <div class="swiper-pagination"></div>
-                      
-                        <!-- If we need navigation buttons -->
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                    </div>
-                </div>
+        <section class="section intro-page">
+            <div class="container">
+                <h1 class="text-white page-title text-center">A propos de nous</h1>
             </div>
         </section>
 
@@ -455,31 +423,9 @@
         <footer class="">
             <div class="section container">
                 <div class="row">
-                    <div class="col col-12 col-md-6 col-lg-6">
+                    <div class="col-12 col-md-6 col-lg-4">
                         <img src="./assets/img/logo_IC_white.png" alt="Logo IC white">
-                        <p class="">L’incubateur qui forme aux compétences entrepreneuriales, promeut l’esprit d’entreprise et connecte les acteurs de l’écosystème en RDC.</p>
-                        
-                        <h3>Contacts</h3>
-                        <ul>
-                            <li> <i class="fa fa-mail-bulk"></i> <a href="mailto:askme@ingeniouscity.com"> askme@ingeniouscity.com</a></li>
-                            <li><i class="fa fa-phone"></i> <a href="tel:+243850565200"> +243850565200</a></li>
-                        </ul>
-                    </div>
-                    <div class="col col-12 col-md-6 col-lg-3">
-                        <h3>Plan du site</h3>
-                        <ul>
-                            <li><a href="./index.html">Accueil</a></li>
-                            <li><a href="./about.html">A propos de nous</a></li>
-                            <li><a href="./index.html">Nos startups</a></li>
-                            <li><a href="./index.html">Contactez-nous</a></li>
-                            <li><a href="app.ingeniouscity.com">Application Tout en un</a></li>
-                        </ul>
-                    </div>
-                    <div class="col col-12 col-md-6 col-lg-3">
-                        <h3>© Ingenious City 2024.</h3>
-                        <ul>
-                            <li><a href="./index.html">Mentions legales</a></li>
-                        </ul>
+                        <p class="text-white">L’incubateur qui forme aux compétences entrepreneuriales, promeut l’esprit d’entreprise et connecte les acteurs de l’écosystème en RDC.</p>
                     </div>
                 </div>
             </div>
@@ -581,7 +527,7 @@
                 }
                 if ($(window).scrollTop() + $(window).height() > $('.counter2').offset().top) {
                     if(!$('.counter2').hasClass('counted')){
-                        $(".counter2").countMe(10,5);
+                        $(".counter2").countMe(10,10);
                         $('.counter2').addClass('counted') 
                     }
                     $('.counter2').addClass('counted') 
